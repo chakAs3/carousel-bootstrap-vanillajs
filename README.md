@@ -1,18 +1,19 @@
 # carousel-bootstrap-vanillajs
 
-it is a simple carousel loading data from JSON file (i could be loaded directly from the REST API , but it has to be cross domaine allowed )
-I have used the following tools :
+It is a simple carousel module that loads data from JSON file (data could be retrieved directly by calling the REST API , but it has to be cross domaine origin allowed .
+
+I have used the following Tools and frameworks :
 
 ##ES6 :
  Very easily to write code in modern ECMAScript 6 standards  
-##Yo ( Yoaman ) :
- to scaffold my project easily to a structured folder using file generating and configurations
-
+##Yo ( Yeoman ) :
+ to scaffold my project easily to a structured folders using file generators and kick start configurations
 ##Webpack :
  A very handy module bundler  and  task manager i have used it to implement SASS , and Babel from ES6 to ES5  Javascript supported in all browsers , as well from watching file changes , run and build my project .
-
 ##Sass :
- i have used sass to override some bootstrap variables ,set my own variables and have more dynamic css .
+i have used sass to override some bootstrap variables, set my own variables and have more dynamic css .
+
+
 
 ##Bootstrap 3 :
 just to exploit the power of bootstrap especially in layout and skinning using less or sass .
