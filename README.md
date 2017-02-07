@@ -16,9 +16,9 @@ Yo ( Yoaman ) : to scaffold my project easily to a structured folder using file 
 just to exploit the power of bootstrap especially in layout and skinning using less or sass .
 
 
-I have only used native javascript ( Vanilla ) in my code to  load JSON , manipulate the DOM , and control the Carousel ( no JQuery ) , there is also another version that i made without bootstrap at all , Only sass , and ES6 You can check it here .
+I have only used native javascript ( Vanilla ) in my code to  load JSON , manipulate the DOM , and control the Carousel ( no JQuery ) , there is also another version that i made without bootstrap at all , Only sass , and ES6 You can check it here .[Sass/ES6 Carousel code]  (https://github.com/chakAs3/carousel-sass-es6)
 
 
 
 ## Demo
-to see the final result it deployed here [Demo online](http://trixlabs.com/ww/carousel/)
+to see the final result it is deployed here [Demo online](http://trixlabs.com/ww/carousel/)
