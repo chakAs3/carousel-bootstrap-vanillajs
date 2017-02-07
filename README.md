@@ -25,3 +25,38 @@ I have only used native javascript ( Vanilla ) in my code to  load JSON , manipu
 
 ## Demo
 to see the final result it is deployed here [Online Demo](http://trixlabs.com/ww/carousel/)
+
+
+
+## Deploy locally 
+
+first clone the project to your workspace
+```sh
+
+$ git clone https://github.com/chakAs3/carousel-bootstrap-vanillajs.git
+
+```
+
+run npm install to install all dependencies ( package.json )
+
+```sh
+
+$ npm install
+
+```
+
+build the project using webpack commad or npm
+
+```sh
+
+$ npm run build
+
+```
+
+serve the web application on localhost using webpack command or npm
+
+```sh
+
+$ npm run start
+
+```
