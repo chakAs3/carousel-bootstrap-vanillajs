@@ -1,0 +1,130 @@
+// overide some bootstrap-sass variables
+$navbar-default-bg: #312312;
+$light-orange: #ff8c00;
+$navbar-default-color: $light-orange;
+$primary : #ffcc22;
+$btn-primary-color : $light-orange;
+$brand-primary:         darken(#0c8bca, 6.5%);
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+
+}
+.carousel-inner > .item > .carousel-caption {
+   box-shadow: 12 21 12 rgba(92,92,92,1);
+   background-color: rgba(55,55,55,0.3);
+
+}
+
+.carousel {
+    box-shadow: 12 21 12 rgba(92,92,92,1);
+    margin:0 auto;
+    figure {
+        height: 400px;
+        background-size: cover;
+        position: relative;
+        &::before{
+        	content:'';
+        	position: absolute;
+        	top:0;
+        	left: 0;
+        	right: 0;
+        	bottom:0;
+        	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+        	opacity: 0;
+        	will-change:opacity;
+        	transition: opacity 250ms ease-in-out;
+        }
+    }
+
+    &-inner {
+	    border-radius: 3px;
+	}
+
+
+    .carousel-control {
+	    fill: #fff;
+	    background-image: none;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    transform: translate(0);
+	    will-change:transform;
+	    transition:transform 250ms ease-in;
+	    opacity: 1;
+	    &.left{
+	    	transform: translate(-100%);
+	    }
+	    &.right{
+	    	transform: translate(100%);
+	    }
+
+	    svg{
+	    	height: 84px;
+	    }
+	}
+	&-indicators {
+	    position: absolute;
+	    bottom: 0px;
+	    right: 0;
+	    left: 0;
+	    width: 100%;
+	    z-index: 15;
+	    margin: 0;
+	    padding: 10px;
+	    text-align: right;
+	    li{
+	    	background-color:rgba(255, 255, 255, 0);
+	    	border:1px solid rgba(22, 22, 22, 1);
+	    	&.active{
+	    		background-color:rgba(70, 184, 218, 1);
+	    		border:1px solid rgba(91, 192, 222, 1);
+	    	}
+	    }
+	}
+	&-caption {
+
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 10;
+	    padding: 25px;
+	    color: #fff;
+	    text-align: left;
+	    transform: translateY(10%);
+	    will-change:transform;
+	    transition:transform 250ms ease-in;
+
+	    margin: 0;
+      box-shadow: 12 21 12 rgba(92,92,92,1);
+      background-color: rgba(55,55,55,0.3);
+
+	}
+	&:hover{
+		.carousel-control{
+			&.left, &.right{
+				transform: translate(0);
+			}
+		}
+		.item {
+	        &::before{
+	        	opacity: 1;
+	        }
+	        .carousel-caption{
+	        	transform: translateY(0);
+	        }
+	    }
+	}
+}
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
