@@ -24,4 +24,4 @@ I have only used native javascript ( Vanilla ) in my code to  load JSON , manipu
 
 
 ## Demo
-to see the final result it is deployed here [Demo online](http://trixlabs.com/ww/carousel/)
+to see the final result it is deployed here [Online Demo](http://trixlabs.com/ww/carousel/)
