@@ -35,52 +35,7 @@ document.onreadystatechange = () => {
     let currentSlide = 0;
     let slideInterval //setInterval(nextSlide,duration); // start carousel autoplay
 
-    // go to the next slide
-    function nextSlide() {
-        goToSlide(currentSlide+1);
-    }
-    // go to the previous slide
-    function previousSlide() {
-        goToSlide(currentSlide-1);
-    }
-    // go to slide n
-    function goToSlide(n) {
-        slides[currentSlide].className = 'item';
-        currentSlide = (n+slides.length)%slides.length;
-        slides[currentSlide].className = 'item active';
-    }
-
-
-    // nextButton.addEventListener("click" ,  ()=> {
-    //      pauseSlideshow();
-    //      nextSlide();
-    // });
-    // prevButton.addEventListener("click" ,  ()=> {
-    //      //pauseSlideshow();
-    //      //previousSlide();
-    //      //var currentActiveItem = myCarouselInit.getActiveIndex();
-    //     // myCarouselInit.slideTo(currentActiveItem+1);
-    //
-    // });
-    // pauseButton.addEventListener("click" ,  ()=> {
-    //     if(playing) {
-    //     pauseSlideshow();
-    //   } else {
-    //     playSlideshow();
-    //   }
-    // });
-    // pause the carousel
-    function pauseSlideshow() {
-        pauseButton.innerHTML = 'Play';
-        playing = false;
-        clearInterval(slideInterval);
-    }
-     // play the carousel
-    function playSlideshow() {
-        pauseButton.innerHTML = 'Pause';
-        playing = true;
-        slideInterval = setInterval(nextSlide,duration);
-    }
+  
   }
 
 };
